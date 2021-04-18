@@ -30,9 +30,6 @@ RUN cd /openedx/authn
 RUN npm install && npm run build 
 
 
-
-
-
 CMD ["npm", "start" ]
 
 
