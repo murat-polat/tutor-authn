@@ -1,0 +1,13 @@
+############# Authn plugin
+
+authn:
+  image: {{ DOCKER_REGISTRY }}{{ AUTHN_DOCKER_IMAGE }}
+    
+  command:  ["npm", "run", "start", "--progress","--disable-host-check"]
+  ports:
+    - "1999:1999"
+      
+  restart: unless-stopped
+  depends_on:
+    - lms
+  

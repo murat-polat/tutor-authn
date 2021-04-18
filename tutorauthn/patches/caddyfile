@@ -1,0 +1,6 @@
+{{ AUTHN_HOST }}{% if not ENABLE_HTTPS %}:80{% endif %} {
+    handle / {
+        respond 204
+    }
+    {{ patch("authn-caddyfile-site")|indent(4) }}
+}

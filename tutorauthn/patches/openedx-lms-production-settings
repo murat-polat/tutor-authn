@@ -1,0 +1,16 @@
+from corsheaders.defaults import default_headers as corsheaders_default_headers
+
+FEATURES['ENABLE_OAUTH2_PROVIDER'] = True
+FEATURES['ENABLE_CORS_HEADERS'] = True
+CORS_ALLOW_CREDENTIALS = True
+FEATURES['ENABLE_COURSEWARE_MICROFRONTEND'] = True
+FEATURES['ENABLE_LOGIN_MICROFRONTEND'] = True
+ENABLE_MARKETING_SITE = True
+MARKETING_SITE_ROOT= "{{LMS_HOST}}"
+
+CORS_ALLOW_HEADERS = corsheaders_default_headers + (
+    'use-jwt-cookie',
+    )
+
+CORS_ORIGIN_WHITELIST.append("{{ AUTHN_HOST }}")
+LOGIN_REDIRECT_WHITELIST.append("{{ AUTHN_HOST }}")
