@@ -1,7 +1,7 @@
 NODE_ENV='production'
 ACCESS_TOKEN_COOKIE_NAME='edx-jwt-cookie-header-payload'
 APPLE_APP_STORE_URL='https://www.apple.com/ios/app-store/'
-BASE_URL='{{ AUTHN_HOST }}'
+BASE_URL='{% if ENABLE_HTTPS %}https{% else %}http{% endif %}://{{ AUTHN_HOST }}'
 CONTACT_URL='{% if ENABLE_HTTPS %}https{% else %}http{% endif %}://{{ LMS_HOST }}/contact'
 CSRF_COOKIE_NAME='csrftoken'
 CSRF_TOKEN_API_PATH='/csrf/api/v1/token'
