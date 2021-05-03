@@ -28,7 +28,11 @@ $ tutor images build authn
 
 $ tutor local quickstart
 
-visit http://yourdomain.com:1999/login.
+visit http://authn.yourdomain.com/login.
+
+or
+
+visit https://authn.yourdomain.com/login
 
 Django Admin site redirection(login and register pages)
 By default Open edX login page is " LMS_HOST/login ". But on authn is " LMS_HOST:1999/login ". So we must redirect login and register pages to the new login pages . There are different ways available for redirections. But the most easiest way, to do that on the Django Admin side.
