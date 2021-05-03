@@ -15,7 +15,7 @@ config = {
     },
 
     "defaults": {
-        "HOST": "{{ LMS_HOST }}:1999",
+        "HOST": "authn.{{ LMS_HOST }}",
         "DOCKER_REGISTRY": "{{ DOCKER_REGISTRY }}",
         "DOCKER_IMAGE": "muratp/authn",
           }

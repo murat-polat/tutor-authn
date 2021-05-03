@@ -31,9 +31,9 @@ $ tutor local quickstart
 visit http://yourdomain.com:1999/login.
 
 Django Admin site redirection(login and register pages)
-By default Open edX login page is " LMS_HOST/login ". But on Logistration is " LMS_HOST:1999/login ". So we must redirect login and register pages to the new login pages . There are different ways available for redirections. But the most easiest way, to do that on the Django Admin side.
+By default Open edX login page is " LMS_HOST/login ". But on authn is " LMS_HOST:1999/login ". So we must redirect login and register pages to the new login pages . There are different ways available for redirections. But the most easiest way, to do that on the Django Admin side.
 
-To add new site go to the http://yourdomain.com/admin/sites/site/ and add new site for Logistration service: (LMS_HOST:1999)
+To add new site go to the http://yourdomain.com/admin/sites/site/ and add new site for authn service: (LMS_HOST:1999)
 
 After adding new page go to the http://yourdomain.com/admin/redirects/redirect/ and add new redirection for login page
 

@@ -1,0 +1,10 @@
+:80 {    
+    authn {
+      path /openedx/authn/*
+    }  
+    
+    handle /* {  
+     root * /openedx/authn  
+     file_server
+    }
+}
