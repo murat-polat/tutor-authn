@@ -41,4 +41,4 @@ To add new site go to the http://yourdomain.com/admin/sites/site/ and add new si
 
 After adding new page go to the http://yourdomain.com/admin/redirects/redirect/ and add new redirection for login page
 
-![](/src/authn.gif)
+![](/src/authn2.gif)
