@@ -22,6 +22,7 @@ RUN git clone https://github.com/edx/frontend-app-authn/ /openedx/authn
 # Create environment file directories
 #RUN mkdir -p /openedx/env/production /openedx/env/development
 #COPY .env.development  /openedx/env/development
+RUN rm -rf /openedx/authn/package-lock.json
 COPY package.json /openedx/authn/package.json
 COPY env.development /openedx/authn/.env.development
 COPY env /openedx/authn/.env
