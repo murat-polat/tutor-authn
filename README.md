@@ -1,5 +1,6 @@
 ## MFE for custom login and register 
-This is a micro-frontend application responsible for the login, registration and password reset functionality. End modified for Tutor Open edX. This is an example plugin for to implement a micro-frontend application to Tutor Open edX.  Please test it before using in production !
+This is a micro-frontend application responsible for the login, registration and password reset functionality. End modified for Tutor Open edX. This is an example plugin for to implement a micro-frontend application to Tutor Open edX.  
+It works fine but, please test it before using in production !
 
 
 
@@ -26,6 +27,8 @@ Building new Docker services for Tutor
 
 $ tutor images build authn
 
+Building process takes some time, please be patient :)
+
 $ tutor local quickstart
 
 visit http://authn.yourdomain.com/login.
@@ -35,4 +38,4 @@ or
 visit https://authn.yourdomain.com/login
 
 
-![](/src/authn2.gif)
+![](/src/authn.gif)
