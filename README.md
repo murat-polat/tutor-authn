@@ -1,10 +1,14 @@
 ## MFE for custom login and register 
-This is a micro-frontend application responsible for the login, registration and password reset functionality. End modified for Tutor Open edX. This is an example plugin for to implement a micro-frontend application to Tutor Open edX.  
+This is a micro-frontend application responsible for the login, registration and password reset functionality.
+
+https://github.com/edx/frontend-app-authn
+
+End modified for Tutor Open edX. 
 It works fine but, please test it before using in production !
 
 
 
-Installation:
+### Installation:
 If using virtualenv: (optional)
 
 $ python3 -m venv ~/tutor
