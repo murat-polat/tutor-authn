@@ -1,0 +1,4 @@
+authn-job:
+  image: {{ DOCKER_REGISTRY }}{{ AUTHN_DOCKER_IMAGE }}
+  restart: unless-stopped    
+    

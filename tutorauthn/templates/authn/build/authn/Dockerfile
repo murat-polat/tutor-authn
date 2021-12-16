@@ -28,8 +28,8 @@ COPY env.development /openedx/authn/.env.development
 COPY env /openedx/authn/.env
 RUN cd /openedx/authn
 ## Installing and building app
-
-RUN npm install && npm run build 
+RUN npm install
+RUN  npm run  build 
 ## Installing Caddy ## 
 
 RUN apt install -y debian-keyring debian-archive-keyring apt-transport-https
@@ -43,7 +43,6 @@ COPY ./Caddyfile /etc/caddy/Caddyfile
 CMD ["npm", "start" ]
 
 EXPOSE 1999/tcp
-
 
 
 
