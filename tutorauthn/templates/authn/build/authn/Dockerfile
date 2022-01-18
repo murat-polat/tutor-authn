@@ -17,7 +17,7 @@ RUN mkdir -p /openedx/authn
 WORKDIR /openedx/authn
 
 # cloning the MFA repository
-RUN git clone https://github.com/edx/frontend-app-authn/ /openedx/authn
+RUN git clone https://github.com/openedx/frontend-app-authn/ /openedx/authn
 
 # Create environment file directories
 #RUN mkdir -p /openedx/env/production /openedx/env/development
