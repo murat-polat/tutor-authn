@@ -1,6 +1,7 @@
 ## MFE for custom login and register 
-This is a micro-frontend application responsible for the login, registration and password reset functionality.(https://github.com/edx/frontend-app-authn) Modified for Tutor Open edX.  
-It works fine but, please test it before using in production !
+This is a micro-frontend application responsible for the login, registration and password reset functionality.(https://github.com/edx/frontend-app-authn) Modified for Tutor Open edX.
+
+####  It works fine but, please test it before using in production !!!
 
 This plugin works as a subdomain of Tutor / Open edX. So you must add an A record to your DNS management.
 
